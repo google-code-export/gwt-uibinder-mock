@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='GwtUIBinderMockDemo'>
+  <source path='client'/>
+  
+  <inherits name='com.google.gwt.user.User'/>
+
+  <entry-point class='marco.stahl.gwt.tdd.util.demo.client.GwtUIBinderMockDemo'/>
+
+
+</module>

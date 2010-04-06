@@ -1,0 +1,45 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:my="urn:import:marco.stahl.gwt.tdd.util.demo.client.utilwidgets">
+	<ui:style>
+		.bac {
+			font-size: 2em;		
+			font-weight: bold;	
+		}
+		
+		h2 {
+			font-size: 1.2em;
+			margin: 0.5em 0;
+		}
+		
+	</ui:style>
+	<g:HTMLPanel>
+		<h1>Sterni Calculator</h1>
+		<table>
+			<tr>
+				<td>Number of Sternis:</td>
+				<td>
+					<my:ValueListBox ui:field="beers" />
+				</td>
+			</tr>
+			<tr>
+				<td>Weight in kg:</td>
+				<td>
+					<g:TextBox ui:field="weight" />
+				</td>
+			</tr>
+			<tr>
+				<td>Gender:</td>
+				<td>
+					<g:RadioButton ui:field="male" name="gender" text="Male"/>
+					<g:RadioButton ui:field="female" name="gender" text="Female"/>
+				</td>
+			</tr>			
+		</table>
+		
+		<h2>Blood Alcohol Concentration:</h2>
+		
+		<g:Label addStyleNames="{style.bac}" ui:field="bac"/>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 
